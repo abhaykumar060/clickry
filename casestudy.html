@@ -1,159 +1,443 @@
-<section 
-  id="case-study"
-  style="
-    position: relative;
-    width: 100%;
-    min-height: 1024px;
-    background: #000000;
-    overflow: hidden;
-    padding: 180px 120px;
-    box-sizing: border-box;
-    font-family: Inter, sans-serif;
-  "
->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Left Content -->
-  <div style="
-    max-width: 520px;
-    position: relative;
-    z-index: 2;
-  ">
+  <title>Case Study</title>
 
-    <p style="
-      color: #FF8A00;
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    ">
-      CASE STUDY
-    </p>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-    <h1 style="
-      color: #FFFFFF;
-      font-size: 42px;
-      line-height: 1.3;
-      font-weight: 600;
-      margin-bottom: 30px;
-    ">
-      +45 Leads in 30 Days
-    </h1>
+  <style>
 
-    <p style="
-      color: #A1A1AA;
-      font-size: 20px;
-      line-height: 1.7;
-      margin-bottom: 40px;
-    ">
-      We helped a real estate brand generate qualified leads with a focused paid advertising strategy.
-    </p>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-    <!-- Points -->
-    <div style="
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 25px;
-    ">
-      <div style="
-        width: 8px;
-        height: 8px;
-        background: #ED750D;
-        border-radius: 50%;
-      "></div>
+    body{
+      background:#000;
+      font-family:'Inter',sans-serif;
+      overflow-x:hidden;
+      color:#fff;
+    }
 
-      <p style="
-        color: #A1A1AA;
-        font-size: 20px;
-        margin: 0;
-      ">
-        2L pipeline generated
-      </p>
-    </div>
+    /* =========================
+       NAVBAR
+    ========================== */
 
-    <div style="
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 25px;
-    ">
-      <div style="
-        width: 8px;
-        height: 8px;
-        background: #ED750D;
-        border-radius: 50%;
-        opacity: .7;
-      "></div>
+    .navbar{
+      width:100%;
+      height:80px;
+      background:#0B0C0E;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0 90px;
+    }
 
-      <p style="
-        color: #A1A1AA;
-        font-size: 20px;
-        margin: 0;
-      ">
-        3x ROI on campaigns
-      </p>
-    </div>
+    .logo img{
+      width:250px;
+      height:auto;
+    }
 
-    <div style="
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 50px;
-    ">
-      <div style="
-        width: 8px;
-        height: 8px;
-        background: #ED750D;
-        border-radius: 50%;
-      "></div>
+    .nav-links{
+      display:flex;
+      gap:24px;
+      list-style:none;
+    }
 
-      <p style="
-        color: #A1A1AA;
-        font-size: 20px;
-        margin: 0;
-      ">
-        Higher quality inbound leads
-      </p>
-    </div>
+    .nav-links a{
+      text-decoration:none;
+      color:#A1A1AA;
+      font-size:20px;
+      font-weight:600;
+      transition:.3s;
+    }
 
-    <!-- Button -->
-    <a 
-      href="#"
-      style="
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 263px;
-        height: 46px;
-        background: #FF8A00;
-        border-radius: 7px;
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 600;
-      "
-    >
-      View Full Case Study
-    </a>
+    .nav-links a:hover,
+    .nav-links a.active{
+      color:#fff;
+    }
 
-  </div>
+    .btn-primary{
+      background:#FF8A00;
+      color:#fff;
+      border:none;
+      padding:10px 24px;
+      border-radius:7px;
+      font-size:20px;
+      font-weight:600;
+      cursor:pointer;
+      transition:.3s;
+    }
 
-  <!-- Right Image -->
-  <div style="
-    position: absolute;
-    right: 5%;
-    top: 25%;
-    z-index: 2;
-    width: 40%;
-  ">
-    <img 
-      src="files\overviews.png"
-      alt="Case Study Dashboard"
-      style="
-        width: 100%;
-        max-width: 650px;
-      "
-    >
-  </div>
+    .btn-primary:hover{
+      background:#e17800;
+    }
 
-</section>
+    /* =========================
+       CASE STUDY
+    ========================== */
+
+    .case-study{
+
+      position:relative;
+
+      width:100%;
+      min-height:calc(100vh - 80px);
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+
+      padding:80px 120px;
+
+      overflow:hidden;
+
+      gap:60px;
+
+    }
+
+    .left-content{
+
+      max-width:520px;
+
+      position:relative;
+
+      z-index:2;
+
+    }
+
+    .small-title{
+
+      color:#FF8A00;
+
+      font-size:20px;
+
+      font-weight:600;
+
+      letter-spacing:1px;
+
+      margin-bottom:20px;
+
+    }
+
+    .main-title{
+
+      font-size:48px;
+
+      line-height:1.3;
+
+      margin-bottom:30px;
+
+      font-weight:600;
+
+      color:#fff;
+
+    }
+
+    .description{
+
+      color:#A1A1AA;
+
+      font-size:20px;
+
+      line-height:1.7;
+
+      margin-bottom:40px;
+
+    }
+
+    .point{
+
+      display:flex;
+
+      align-items:center;
+
+      gap:18px;
+
+      margin-bottom:24px;
+
+    }
+
+    .dot{
+
+      width:8px;
+
+      height:8px;
+
+      background:#ED750D;
+
+      border-radius:50%;
+
+      flex-shrink:0;
+
+    }
+
+    .point p{
+
+      color:#A1A1AA;
+
+      font-size:20px;
+
+    }
+
+    .case-btn{
+
+      display:inline-flex;
+
+      justify-content:center;
+
+      align-items:center;
+
+      width:263px;
+
+      height:50px;
+
+      background:#FF8A00;
+
+      color:#fff;
+
+      text-decoration:none;
+
+      border-radius:7px;
+
+      font-size:20px;
+
+      font-weight:600;
+
+      margin-top:30px;
+
+      transition:.3s;
+
+    }
+
+    .case-btn:hover{
+
+      background:#e17800;
+
+    }
+
+    .right-content{
+
+      flex:1;
+
+      display:flex;
+
+      justify-content:flex-end;
+
+      align-items:center;
+
+    }
+
+    .right-content img{
+
+      width:100%;
+
+      max-width:650px;
+
+      height:auto;
+
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media(max-width:1200px){
+
+      .navbar{
+
+        padding:20px 40px;
+
+        flex-direction:column;
+
+        height:auto;
+
+        gap:20px;
+
+      }
+
+      .case-study{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:60px 40px;
+
+      }
+
+      .point{
+
+        justify-content:center;
+
+      }
+
+      .right-content{
+
+        justify-content:center;
+
+      }
+
+    }
+
+    @media(max-width:768px){
+
+      .logo img{
+
+        width:180px;
+
+      }
+
+      .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+      }
+
+      .nav-links a{
+
+        font-size:16px;
+
+      }
+
+      .btn-primary{
+
+        font-size:16px;
+
+      }
+
+      .main-title{
+
+        font-size:36px;
+
+      }
+
+      .description{
+
+        font-size:18px;
+
+      }
+
+      .point p{
+
+        font-size:18px;
+
+      }
+
+      .case-btn{
+
+        width:100%;
+
+        max-width:300px;
+
+        font-size:18px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="files/Logo.png" alt="Logo">
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="casestudy.html" class="active">Case Study</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="aboutus.html">About Us</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- CASE STUDY -->
+
+    <section class="case-study">
+
+        <div class="left-content">
+
+            <p class="small-title">
+
+                CASE STUDY
+
+            </p>
+
+            <h1 class="main-title">
+
+                +45 Leads in 30 Days
+
+            </h1>
+
+            <p class="description">
+
+                We helped a real estate brand generate qualified leads with a focused paid advertising strategy.
+
+            </p>
+
+            <div class="point">
+
+                <div class="dot"></div>
+
+                <p>2L pipeline generated</p>
+
+            </div>
+
+            <div class="point">
+
+                <div class="dot"></div>
+
+                <p>3x ROI on campaigns</p>
+
+            </div>
+
+            <div class="point">
+
+                <div class="dot"></div>
+
+                <p>Higher quality inbound leads</p>
+
+            </div>
+
+            <a href="#" class="case-btn">
+
+                View Full Case Study
+
+            </a>
+
+        </div>
+
+        <div class="right-content">
+
+            <img src="files/overviews.png" alt="Case Study Dashboard">
+
+        </div>
+
+    </section>
+
+</body>
+</html>

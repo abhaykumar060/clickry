@@ -1,246 +1,420 @@
-<section 
-  class="about-us" 
-  style="
-    position: relative;
-    width: 100%;
-    min-height: 1154px;
-    background: #000;
-    overflow: hidden;
-    padding: 120px 90px;
-    box-sizing: border-box;
-    font-family: Inter, sans-serif;
-  "
->
-  
-  <!-- Glow Effects -->
-  <div style="
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    height:80px;
+    background:#0B0C0E;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 90px;
+}
+
+.logo img{
+    width:250px;
+    height:auto;
+}
+
+.nav-links{
+    display:flex;
+    gap:24px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#A1A1AA;
+    font-size:20px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:#fff;
+}
+
+.btn-primary{
+    background:#FF8A00;
+    color:#fff;
+    border:none;
+    padding:10px 24px;
+    border-radius:7px;
+    font-size:20px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.btn-primary:hover{
+    background:#e17600;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about-us{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    background:#000;
+    padding:100px 90px;
+    overflow:hidden;
+}
+
+.top-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    position:relative;
+    z-index:2;
+}
+
+.left-content{
+    max-width:500px;
+}
+
+.small-title{
+    color:#FF8A00;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.main-title{
+    font-size:50px;
+    line-height:1.3;
+    margin-bottom:30px;
+}
+
+.orange-line{
+    width:62px;
+    height:2px;
+    background:#FF8A00;
+    margin-bottom:30px;
+}
+
+.description{
+    color:#A1A1AA;
+    font-size:16px;
+    line-height:30px;
+    margin-bottom:40px;
+}
+
+.stats{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.stat h2{
+    color:#FF8A00;
+    font-size:48px;
+}
+
+.stat p{
+    color:#fff;
+    margin-top:8px;
+}
+
+.right-content img{
+    width:100%;
+    max-width:650px;
+}
+
+/* ================= GLOW ================= */
+
+.glow1{
     position:absolute;
     width:574px;
     height:314px;
     right:100px;
-    top:122px;
-    background: radial-gradient(circle, rgba(113,55,2,0.8) 0%, rgba(255,138,0,0) 100%);
-    filter: blur(75px);
-  "></div>
+    top:120px;
+    background:radial-gradient(circle,
+    rgba(113,55,2,.8),
+    rgba(255,138,0,0));
+    filter:blur(75px);
+}
 
-  <div style="
+.glow2{
     position:absolute;
     width:411px;
     height:314px;
     right:250px;
-    top:136px;
-    background: radial-gradient(circle, rgba(141,83,15,0.4) 0%, rgba(255,138,0,0) 100%);
-    filter: blur(75px);
-  "></div>
+    top:140px;
+    background:radial-gradient(circle,
+    rgba(141,83,15,.5),
+    rgba(255,138,0,0));
+    filter:blur(75px);
+}
 
-  <!-- Left Content -->
-  <div style="max-width:500px; position:relative; z-index:2;">
+/* ================= PROCESS ================= */
 
-    <p style="
-      color:#FF8A00;
-      font-size:18px;
-      font-weight:600;
-      margin-bottom:20px;
-    ">
-      ABOUT US
-    </p>
-
-    <h1 style="
-      color:#fff;
-      font-size:50px;
-      line-height:1.3;
-      font-weight:600;
-      margin-bottom:30px;
-    ">
-      We Focus on Results <br> Not Just Marketing.
-    </h1>
-
-    <div style="
-      width:62px;
-      height:2px;
-      background:#FF8A00;
-      margin-bottom:30px;
-    "></div>
-
-    <p style="
-      color:#A1A1AA;
-      font-size:16px;
-      line-height:30px;
-      font-weight:500;
-      margin-bottom:40px;
-    ">
-      We are a performance-driven marketing agency focused on generating real business outcomes. Our approach combines data, strategy, and execution to deliver measurable growth.
-    </p>
-
-    <!-- Stats -->
-    <div style="
-      display:flex;
-      gap:40px;
-      flex-wrap:wrap;
-    ">
-      
-      <div>
-        <h2 style="
-          color:#FF8A00;
-          font-size:48px;
-          margin:0;
-        ">
-          50+
-        </h2>
-        <p style="color:#fff;">Campaigns</p>
-      </div>
-
-      <div>
-        <h2 style="
-          color:#FF8A00;
-          font-size:48px;
-          margin:0;
-        ">
-          3x+
-        </h2>
-        <p style="color:#fff;">Average ROI</p>
-      </div>
-
-      <div>
-        <h2 style="
-          color:#FF8A00;
-          font-size:48px;
-          margin:0;
-        ">
-          10+
-        </h2>
-        <p style="color:#fff;">Clients Served</p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Right Image -->
-  <div style="
-    position:absolute;
-    right:5%;
-    top:5%;
-    z-index:2;
-    width: 40%;
-  ">
-    <img 
-      src="files\team logo.png" 
-      alt="About Team"
-      style="
-        width:100%;
-        max-width:650px;;
-      "
-    >
-  </div>
-
-  <!-- Process Section -->
-  <div style="
+.process{
     margin-top:180px;
     text-align:center;
     position:relative;
     z-index:2;
-  ">
+}
 
-    <p style="
-      color:#FF8A00;
-      font-size:18px;
-      font-weight:600;
-      margin-bottom:10px;
-    ">
-      OUR PROCESS
-    </p>
+.process-small{
+    color:#FF8A00;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:10px;
+}
 
-    <h2 style="
-      color:#fff;
-      font-size:32px;
-      margin-bottom:80px;
-    ">
-      Strategy That Delivers Growth
-    </h2>
+.process-title{
+    font-size:36px;
+    margin-bottom:80px;
+}
 
-    <div style="
-      display:flex;
-      justify-content:center;
-      gap:80px;
-      flex-wrap:wrap;
-    ">
+.process-cards{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
 
-      <!-- Card 1 -->
-      <div style="width:220px;">
-        <div style="
-          font-size:60px;
-          color:#FF8A00;
-          margin-bottom:20px;
-        ">
-          🧠
-        </div>
+.card{
+    width:240px;
+}
 
-        <h3 style="
-          color:#fff;
-          margin-bottom:20px;
-        ">
-          Strategy
-        </h3>
+.card-icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
 
-        <p style="
-          color:#A1A1AA;
-          line-height:1.6;
-        ">
-          We understand your business, audience, and goals before planning campaigns.
-        </p>
-      </div>
+.card h3{
+    margin-bottom:20px;
+    font-size:26px;
+}
 
-      <!-- Card 2 -->
-      <div style="width:220px;">
-        <div style="
-          font-size:60px;
-          color:#FF8A00;
-          margin-bottom:20px;
-        ">
-          🚀
-        </div>
+.card p{
+    color:#A1A1AA;
+    line-height:1.7;
+}
 
-        <h3 style="
-          color:#fff;
-          margin-bottom:20px;
-        ">
-          Execution
-        </h3>
+/* ================= RESPONSIVE ================= */
 
-        <p style="
-          color:#A1A1AA;
-          line-height:1.6;
-        ">
-          We launch targeted campaigns with optimized creatives and messaging.
-        </p>
-      </div>
+@media(max-width:1200px){
 
-      <!-- Card 3 -->
-      <div style="width:220px;">
-        <div style="
-          font-size:60px;
-          color:#FF8A00;
-          margin-bottom:20px;
-        ">
-          📈
-        </div>
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+    gap:20px;
+}
 
-        <h3 style="
-          color:#fff;
-          margin-bottom:20px;
-        ">
-          Optimization
-        </h3>
+.top-content{
+    flex-direction:column;
+    text-align:center;
+}
 
-        <p style="
-          color:#A1A1AA;
-          line-height:1.6;
-        ">
-          We continuously analyze and improve performance for maximum ROI.
-        </p>
-      </div>
+.stats{
+    justify-content:center;
+}
 
-    </div>
-  </div>
+.process-cards{
+    gap:50px;
+}
+
+}
+
+@media(max-width:768px){
+
+.about-us{
+    padding:60px 30px;
+}
+
+.logo img{
+    width:180px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links a{
+    font-size:16px;
+}
+
+.main-title{
+    font-size:36px;
+}
+
+.process-title{
+    font-size:28px;
+}
+
+.card{
+    width:100%;
+}
+
+.btn-primary{
+    font-size:16px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="files/Logo.png" alt="Logo">
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="casestudy.html">Case Study</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="aboutus.html" class="active">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+
+
+</nav>
+
+<section class="about-us">
+
+<div class="glow1"></div>
+<div class="glow2"></div>
+
+<div class="top-content">
+
+<div class="left-content">
+
+<p class="small-title">
+ABOUT US
+</p>
+
+<h1 class="main-title">
+We Focus on Results
+<br>
+Not Just Marketing.
+</h1>
+
+<div class="orange-line"></div>
+
+<p class="description">
+We are a performance-driven marketing agency focused on generating real business outcomes. Our approach combines data, strategy, and execution to deliver measurable growth.
+</p>
+
+<div class="stats">
+
+<div class="stat">
+<h2>50+</h2>
+<p>Campaigns</p>
+</div>
+
+<div class="stat">
+<h2>3x+</h2>
+<p>Average ROI</p>
+</div>
+
+<div class="stat">
+<h2>10+</h2>
+<p>Clients Served</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="right-content">
+
+<img src="files/team logo.png" alt="About Team">
+
+</div>
+
+</div>
+
+<div class="process">
+
+<p class="process-small">
+OUR PROCESS
+</p>
+
+<h2 class="process-title">
+Strategy That Delivers Growth
+</h2>
+
+<div class="process-cards">
+
+<div class="card">
+
+<div class="card-icon">🧠</div>
+
+<h3>Strategy</h3>
+
+<p>
+We understand your business, audience, and goals before planning campaigns.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">🚀</div>
+
+<h3>Execution</h3>
+
+<p>
+We launch targeted campaigns with optimized creatives and messaging.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">📈</div>
+
+<h3>Optimization</h3>
+
+<p>
+We continuously analyze and improve performance for maximum ROI.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
+
+</body>
+</html>
+```
